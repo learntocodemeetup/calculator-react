@@ -1,0 +1,36 @@
+.App {
+  text-align: center;
+  
+}
+
+.numpad button {
+  float: left;
+}
+
+button {
+  width: 100px;
+  height: 50px;
+  font-size: 30px;
+  border: 2px solid blue;
+  background-color: deepskyblue;
+  color: #fff;
+  margin: 2px;
+}
+
+.numpad button:nth-child(3n+1) {
+  clear: left;
+}
+
+.numpad {
+  width: 405px;
+  height: 325px;
+  border: 1px solid red;
+  margin: 0 auto;
+}
+
+.total {
+  display: block;
+  background-color: #eee;
+  font-size: 48px;
+  width: 400px;
+}
