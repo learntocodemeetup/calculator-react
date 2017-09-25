@@ -23,12 +23,20 @@ class App extends Component {
 
 
   }
+
+  clearClick = () => {
+    this.setState({
+      total: 0,
+    })
+  }
+
+
   render() {
     return (
       <div className="App">
         <div className="numpad">
           
-          <button className="clear">C</button>
+          <button className="clear" onClick = {this.clearClick}>C</button>
           <button onClick = {this.numberClick}>1</button>
           <button onClick = {this.numberClick}>2</button>
           <button onClick = {this.numberClick}>3</button>
@@ -48,7 +56,7 @@ class App extends Component {
           <button>/</button>
 
           <input className="total" type="text" value={"Total is " + this.state.total} />
-          <p>Current number is {this.state.currentNumber}</p>
+          
           
         </div>
       </div>
